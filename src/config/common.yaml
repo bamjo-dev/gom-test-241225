@@ -1,15 +1,20 @@
 ---
-gameTitle: Narrat Game Example
-saveFileName: Narrat Empty
-images: {}
+gameTitle: Ring of Promise
+saveFileName: RoP
+images: {
+  black: img/backgrounds/black.jpg,
+  forest_nightsky: img/backgrounds/forest_nightsky.jpg,
+  forest: img/backgrounds/forest.jpg,
+  torch: img/sprites/torch.png
+  }
 dialogPanel:
-  textSpeed: 30
+  textSpeed: 40
   animateText: true
   timeBetweenLines: 100
   overlayMode: true
-  rightOffset: 100
+  rightOffset: 0
   bottomOffset: 50
-  width: 475
+  width: 300
   height: 680
   allowHistoryToggling: true # This will add a button with the auto/skip button that allows the player to toggle viewing dialog history.
   historyLength: 200 # The number of dialogue lines to keep in the history
@@ -53,4 +58,4 @@ saves:
     foregroundImage: 'img/ui/autosave_spinner.png'
 menuButtons:
   new-game:
-    text: Start a new game
+    text: Begin
