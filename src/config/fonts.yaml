@@ -1,4 +1,4 @@
-allowChoosingFont: true
+allowChoosingFont: false
 fontSets:
   default:
     header:
@@ -6,23 +6,23 @@ fontSets:
       fontFamily: '"Baskervville SC", serif'
       files: ['fonts/Baskervville_SC/BaskervvilleSC-Regular.ttf']
     body:
-      name: 'Montserrat'
-      fontFamily: '"Montserrat", sans-serif'
+      name: Baskervville SC
+      fontFamily: '"Baskervville SC", serif'
       files:
-        - file: 'fonts/Montserrat/Montserrat-VariableFont_wght.ttf'
+        - file: 'fonts/Baskervville_SC/BaskervvilleSC-Regular.ttf'
           options: {}
-        - file: 'fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf'
+        - file: 'fonts/Baskervville_SC/BaskervvilleSC-Regular.ttf'
           options:
             style: italic
   custom:
     header:
-      name: Nerko One
-      fontFamily: '"Nerko One", cursive'
-      files: ['fonts/Nerko_One/NerkoOne-Regular.ttf']
+      name: Baskervville SC
+      fontFamily: '"Baskervville SC", serif'
+      files: ['fonts/Baskervville_SC/BaskervvilleSC-Regular.ttf']
     body:
-      name: 'Sevillana'
-      fontFamily: '"Sevillana", cursive'
-      files: ['fonts/Sevillana/Sevillana-Regular.ttf']
+      name: Baskervville SC
+      fontFamily: '"Baskervville SC", serif'
+      files: ['fonts/Baskervville_SC/BaskervvilleSC-Regular.ttf']
   opendyslexic:
     header:
       name: 'OpenDyslexic'
