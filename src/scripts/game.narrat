@@ -1,4 +1,51 @@
 main:
-  "Hello world"
-  set_screen game 0 slide-top 1000
-  "(This game is empty so nothing will happen past this point. Open game.narrat to start editing)"
+  choice:
+    "You awake into existence, and your first thoughts are of your identity and your imperative."
+    "Who you are":
+      jump whoYouAre
+
+whoYouAre:
+  choice:
+    talk player idle "I am the Ring of Promise."
+    "Your imperative":
+      jump toolOfSalvation
+
+toolOfSalvation:
+  choice:
+    talk player idle "Become the tool of salvation wielded by the Promised Child."
+    "But where is the Promised Child?":
+      jump where
+
+where:
+  choice:
+    "He is not with you. He is far."
+    "New imperative":
+      jump newImp
+
+newImp:
+  "RETURN TO THE PROMISED CHILD"
+  jump forest1
+
+forest1:
+  set_screen scene1 0
+  play music forest
+  narrate "You lie on cold dirt with the stars above you." 100 true
+  narrate "The moon slowly reveals itself from behind the passing clouds, like a white eye rousing from a weary sleep." 100 true
+  think player idle "She is as white as the Child's eyes"
+  set_screen scene2 0
+  narrate "The forest around you stands completely still and lightless." 100 true
+  narrate "That is until a glimmer, then a flash, then a warm orange glow rises from the darkness." 100 true
+  "From behind the trees, a flicker grows into a small fire as it nears you, accompanied by a figure."
+  set data.torch (create_sprite img/sprites/torch.png 0 0)
+  choice:
+    "It was the fire of a torch held by a human."
+    "Refuse to be taken":
+      jump refuse
+    "Be taken"
+      jump accept
+
+refuse:
+  "Lorem ipsum."
+
+accept:
+  "Lorem ipsum."
