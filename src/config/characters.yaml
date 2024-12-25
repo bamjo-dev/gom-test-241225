@@ -1,6 +1,8 @@
 ---
 config:
   imagesPath: img/characters/
+  playerCharacter: player
+  gameCharacter: game
 characters:
   game:
     name: ''
@@ -8,4 +10,6 @@ characters:
   player:
     style:
       color: orange
+    sprites:
+      idle: none
     name: You
