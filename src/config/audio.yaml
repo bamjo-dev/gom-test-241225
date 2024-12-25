@@ -1,7 +1,30 @@
-files: {}
+files:
+  title:
+    loop: true
+    src: music/title.mp3
+    fadeInTime: 0
+    fadeInDelay: 1
+  intro:
+    loop: true
+    src: music/intro.mp3
+  forest:
+    volume: 0.2
+    loop: true
+    src: music/forest.mp3
+    fadeInTime: 0
+    fadeInDelay: 1
+  click:
+    volume: 0.2
+    src: audio/click.ogg
+  start:
+    src: audio/start.ogg
+  type:
+    src: audio/type.ogg
 options:
   volume: 0.5
   musicFadeInTime: 0.5
   musicFadeInDelay: 0.5
   musicFadeOutTime: 0.5
-audioTriggers: {}
+audioTriggers:
+  onPlayerAnswered: click
+  onPressStart: start
