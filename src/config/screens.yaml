@@ -1,5 +1,7 @@
 screens:
   default:
-    background: img/backgrounds/curtain.webp
-  game:
-    background: img/backgrounds/map.webp
+    background: img/backgrounds/black.jpg
+  scene1:
+    background: img/backgrounds/forest_nightsky.jpg
+  scene2:
+    background: img/backgrounds/forest.jpg
